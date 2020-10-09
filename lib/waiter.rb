@@ -18,12 +18,6 @@ class Waiter
     Meal.new(self, customer, total, tip)
   end
   
-  def meals
-    Meal.all.select { |meal| meal.customer == self }
-  end
-  
-  def waiters
-    meals.map
-  end
+
 
 end
